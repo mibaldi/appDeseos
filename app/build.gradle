@@ -2,9 +2,12 @@ apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.1"
+    buildToolsVersion "25.0.3"
     defaultConfig {
         applicationId "com.mibaldi.proyectkotlin"
         minSdkVersion 16
@@ -24,6 +27,7 @@ android {
 kapt {
     generateStubs = true
 }
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -56,3 +60,4 @@ dependencies {
     }
     compile "com.squareup.retrofit2:converter-gson:2.3.0"
 }
+
