@@ -11,5 +11,5 @@ interface HomeInteractor {
 
     fun getCurrentItem() : Item
     fun getListItems(): List<Item>
-    fun getPrefixs()
+
 }

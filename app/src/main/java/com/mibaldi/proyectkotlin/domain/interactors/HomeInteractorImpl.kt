@@ -15,7 +15,5 @@ class HomeInteractorImpl(val repository: Repository) : HomeInteractor {
     override fun getCurrentItem(): Item {
         return repository.getListItems().first()
     }
-    override fun getPrefixs() {
-        repository.requestPrefixs()
-    }
+
 }
