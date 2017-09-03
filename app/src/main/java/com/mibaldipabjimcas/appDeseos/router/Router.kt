@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import com.mibaldipabjimcas.appDeseos.ui.activities.DetailActivity
+import com.mibaldipabjimcas.appDeseos.ui.activities.MainActivity
 
 
 /**
@@ -25,5 +26,11 @@ class Router(val applicationContext: Context) {
         applicationContext.startActivity(intent)
     }
 
+    fun goToMainActivity() {
+        val intent = Intent(applicationContext, MainActivity::class.java).apply {
+            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        }
+        applicationContext.startActivity(intent)
+    }
 
 }
