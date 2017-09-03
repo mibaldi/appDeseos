@@ -1,0 +1,13 @@
+package com.mibaldipabjimcas.appDeseos.ui.presenters.homeActivity
+
+import com.mibaldipabjimcas.appDeseos.ui.activities.MainActivity
+
+/**
+ * Created by mikelbalducieldiaz on 21/5/17.
+ */
+@javax.inject.Singleton
+@dagger.Subcomponent(modules = arrayOf(HomeModule::class))
+interface HomeComponent {
+    fun inject(activity: MainActivity)
+    fun inject(presenter: HomePresenter)
+}
