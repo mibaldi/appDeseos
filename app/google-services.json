@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "184258345945",
+    "firebase_url": "https://appdeseos.firebaseio.com",
+    "project_id": "appdeseos",
+    "storage_bucket": "appdeseos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184258345945:android:bfb77a863325217f",
+        "android_client_info": {
+          "package_name": "com.mibaldipabjimcas.appDeseos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184258345945-9ng3beudl06m4nk09419blhss66bscme.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1DLWwe-tElX3HNMWseoaKM5Z4h2Rcjd8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
