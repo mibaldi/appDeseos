@@ -1,6 +1,7 @@
 package com.mibaldipabjimcas.appDeseos.ui.presenters.loginActivity
 
 import android.content.Intent
+import com.mibaldipabjimcas.appDeseos.R
 import com.mibaldipabjimcas.appDeseos.base.BaseMvpPresenterImpl
 import com.mibaldipabjimcas.appDeseos.domain.callbacks.AuthListener
 import com.mibaldipabjimcas.appDeseos.managers.AuthManager
@@ -43,11 +44,11 @@ class LoginPresenter(context: LoginActivity) : BaseMvpPresenterImpl<LoginContrac
     }
 
     override fun onLoginError() {
-        mView?.showError("Error en la autenticación")
+        mView?.showError(R.string.error_login_text)
     }
 
     override fun onConnectionFailed() {
-        mView?.showError("Error en la conexión")
+        mView?.showError(R.string.error_connection_text)
     }
 
 }
